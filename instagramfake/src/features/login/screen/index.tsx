@@ -4,7 +4,7 @@ import { Text } from "native-base";
 import { View,Link,Box,Center} from "native-base";
 import { Image} from 'react-native';
 import { StyleSheet } from "react-native";
-import { Alert } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import CustomButton from "../../../design/ui/components/button";
 
 export default function Login() {
@@ -12,6 +12,8 @@ export default function Login() {
   // <Image  style={styles.image} size={30} borderRadius={100} source={{uri: img.default.src}} alt="SignUp" />
   return (
     <View backgroundColor={'primary.200'} h={5} p={5} flex={1} justifyContent="space-evelyn" alignItems="center">
+      <SafeAreaView>
+      <ScrollView>
     
       <Image style = {styles.image} source={img} />
  
@@ -34,6 +36,8 @@ export default function Login() {
         <Divider my="4" style={styles.divider} _light={{ bg: 'secondary.100' }} />
       </Row>
       <CustomButton style={styles.btn_facebook} content="Entre com facebook" variationBtn="link" />
+      </ScrollView>
+      </SafeAreaView>
     </View>
   );
 }

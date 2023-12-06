@@ -60,6 +60,11 @@ android {
         }
         */
     }
+
+    compileOptions {
+        sourceCompatibility 8
+        targetCompatibility 8
+    }
 }
 
 dependencies {

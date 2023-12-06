@@ -1,0 +1,29 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/COMIC.TTF",
+      "sha1": "66f4b14c32b6a79f6d68c0f7634686b82b1aea95"
+    },
+    {
+      "path": "assets/fonts/comici.ttf",
+      "sha1": "42722080d43013926183eea1c6a7f4b194e9aa45"
+    },
+    {
+      "path": "assets/fonts/ComicSansMS3.ttf",
+      "sha1": "b60343e5f678c56d52e80b00e604104a73d256f2"
+    },
+    {
+      "path": "assets/fonts/comicz.ttf",
+      "sha1": "fa7d00a313798e4e75a674353b10ba22e7377c38"
+    },
+    {
+      "path": "assets/fonts/design.graffiti.comicsansms.ttf",
+      "sha1": "5629962f493db47b992a9b044699874b6793eac8"
+    },
+    {
+      "path": "assets/fonts/design.graffiti.comicsansmsgras.ttf",
+      "sha1": "987bf28bedf0f3e081b5cb12fc748cbea3cebd0f"
+    }
+  ]
+}

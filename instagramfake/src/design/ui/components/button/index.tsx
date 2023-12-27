@@ -7,6 +7,7 @@ interface Props {
   variation?: string;
   variationBtn?: string,
   style?: any,
+  rounded?: any,
   handleClick?: () => void | null;
 }
 
@@ -16,9 +17,10 @@ export default function CustomButton({
   variationBtn,
   style,
   handleClick,
+  rounded,
 }: Props) {
   return (
-    <NativeButton style={style ? style : null} bg={variation ? `${variation}.100` : null} mt={8} onPress={handleClick} variant={variationBtn ? variationBtn : null}>
+    <NativeButton style={style ? style : null} rounded={rounded ? rounded : null} bg={variation ? `${variation}.100` : null} mt={8} onPress={handleClick} variant={variationBtn ? variationBtn : null}>
       {content}
     </NativeButton>
   );

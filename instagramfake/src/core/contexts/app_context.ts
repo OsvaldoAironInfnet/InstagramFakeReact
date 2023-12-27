@@ -1,14 +1,18 @@
 import { createContext, useState } from "react";
 
-interface AppContext {
-    "data": {}
+type AppContext = {
+    showOrHideLoading: boolean | null,
+    showOrHideToast: boolean | null,
 }
 
 type AppGlobalContextType = {
-    appContext: AppContext;
-    saveAppContext: (appContext: AppContext) => void;
+    appContext: AppContext | null;
+    saveAppContext: (appContextData: AppContext) => void;
 }
 
-const AppGlobalContext = createContext<AppGlobalContextType | null>(null);
+const AppGlobalContext = createContext<AppGlobalContextType>({
+    appContext: null,
+    saveAppContext: () => {},
+});
 
 export default AppGlobalContext;

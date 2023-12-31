@@ -1,8 +1,10 @@
 import { createContext, useState } from "react";
+import { Storie } from "../../features/home/presentation/components/stories";
 
 type AppContext = {
     showOrHideLoading: boolean | null,
     showOrHideToast: boolean | null,
+    storiesHome: Storie[] | null
 }
 
 type AppGlobalContextType = {

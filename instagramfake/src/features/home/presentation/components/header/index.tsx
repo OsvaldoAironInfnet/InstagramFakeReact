@@ -18,15 +18,15 @@ export default function HomeHeader({ title, feedButton, likesButton, directButto
     }
 
     const icons = [{
-        icon: <TouchableOpacity onPress={() => showAlert('Feed')}><AddIcon style={styles.icons} /></TouchableOpacity>,
+        icon: <TouchableOpacity onPress={() => showAlert('Publicação no Feed')}><AddIcon style={styles.icons} /></TouchableOpacity>,
         iconName: "add",
         showButton: feedButton
     }, {
-        icon: <TouchableOpacity onPress={() => showAlert('Likes')}><FavouriteIcon style={styles.icons} /></TouchableOpacity>,
+        icon: <TouchableOpacity onPress={() => showAlert('Visualização de Likes')}><FavouriteIcon style={styles.icons} /></TouchableOpacity>,
         iconName: "favourite-icon",
         showButton: likesButton
     }, {
-        icon: <TouchableOpacity onPress={() => showAlert('Direct')}><MoonIcon style={styles.icons} /></TouchableOpacity>,
+        icon: <TouchableOpacity onPress={() => showAlert('Mensagens Direct')}><MoonIcon style={styles.icons} /></TouchableOpacity>,
         iconName: "direct-messages",
         showButton: directButton
     }
